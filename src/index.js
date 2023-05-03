@@ -4,8 +4,14 @@ import {menuPage} from './js-modules/menu';
 import '/home/javan/repos/personal-projects/restaurant-page/src/styles.css';
 
 const page = (() => {
+	const mainHeading = document.createElement('div');
+	mainHeading.setAttribute('id', 'main-heading');
+	mainHeading.textContent = 'Sanji\'s';
+	document.body.append(mainHeading);
 	const header = document.createElement('div');
 	const content = document.createElement('div');
+	header.classList.add('header');
+	content.classList.add('content');
 
 	(() => {
 		const contentIds = ['home', 'menu', 'contact'];
@@ -20,7 +26,7 @@ const page = (() => {
 
 	const headerElements = header.children;
 	const contentElements = content.children;
-
+	contentElements[0].classList.add('active');
 	document.body.append(header, content);
 	return {
 		header,
