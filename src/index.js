@@ -1,6 +1,7 @@
 import {homePage} from './js-modules/home';
 import {contactPage} from './js-modules/contact';
 import {menuPage} from './js-modules/menu';
+import '/home/javan/repos/personal-projects/restaurant-page/src/styles.css';
 
 const page = (() => {
 	const header = document.createElement('div');
