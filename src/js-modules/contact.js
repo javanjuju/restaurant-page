@@ -1,10 +1,12 @@
 const contactTab = document.createElement('div');
 const number = document.createElement('div');
 const area = document.createElement('div');
+const email = document.createElement('div');
 
 contactTab.textContent = 'Contacts';
-number.textContent = 'XXXXXXXXX';
-area.textContent = 'XXXXXXX';
+email.textContent = 'baritekitchen@gmail.com';
+number.textContent = 'Number: XXXXXXXXX';
+area.textContent = 'Location: XXXXXXX';
 
 const contactPage = (() => {
 	contactTab.setAttribute('data-tab-target', '#contact');
@@ -12,6 +14,7 @@ const contactPage = (() => {
 	area.classList.add('contact');
 
 	return {
+		email,
 		contactTab,
 		number,
 		area,

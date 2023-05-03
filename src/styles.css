@@ -1,0 +1,37 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(204, 204, 204);
+}
+.header > div{
+    padding: 10px;
+}
+.header :hover{
+    background-color: gray;
+    cursor: pointer;
+}
+[data-tabs]{
+    display: none;
+}
+.active-tab{
+    background-color: gray;
+}
+.active[data-tabs]{
+    display: block;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}

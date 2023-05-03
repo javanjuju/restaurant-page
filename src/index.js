@@ -7,11 +7,12 @@ const page = (() => {
 	const content = document.createElement('div');
 
 	(() => {
-		const contentIds = ['home', 'menu', 'about'];
+		const contentIds = ['home', 'menu', 'contact'];
 		let i;
 		for (i = 0; i < 3; i++) {
 			const cell = document.createElement('div');
 			cell.setAttribute('id', contentIds[i]);
+			cell.setAttribute('data-tabs', '');
 			content.appendChild(cell);
 		}
 	})();
@@ -27,8 +28,21 @@ const page = (() => {
 		contentElements,
 	};
 })();
+page.header.append(homePage.homeTab, menuPage.menuTab, contactPage.contactTab);
+page.contentElements[0].append(homePage.heading, homePage.welcomeMessage, homePage.hours);
+page.contentElements[1].append(menuPage.menuItems);
+page.contentElements[2].append(contactPage.area, contactPage.number, contactPage.email);
 
-page.header.append(homePage.homeTab, contactPage.contactTab, menuPage.menuTab);
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tabs]');
 
-page.content.append(homePage.heading, homePage.hours, contactPage.number, contactPage.area);
-
+tabs.forEach(tab => {
+	tab.addEventListener('click', () => {
+		const target = document.querySelector(tab.dataset.tabTarget);
+		tabContents.forEach(tabContent => {
+			tabContent.classList.remove('active');
+		});
+		target.classList.add('active');
+	});
+},
+);
