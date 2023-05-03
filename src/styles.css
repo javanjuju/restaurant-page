@@ -1,6 +1,11 @@
 @font-face{
+    font-family: 'CopyrightHouseIndustries';
+    src: url('fonts/CopyrightHouseIndustries.ttf');
+    font-style: normal;
+}
+@font-face {
     font-family: 'GreatVibes';
-    src: url('fonts/GreatVibes-Regular.otf') format('otf');
+    src: url('fonts/GreatVibes-Regular.otf');
     font-style: normal;
 }
 html{
@@ -13,12 +18,12 @@ body{
     padding: 0;
 }
 #main-heading{
-    font-family: 'GreatVibes',sans-serif;
     color: white;
     padding: 15px;
     font-size: 3rem;
     background-color: black;
     text-align: center;
+    font-family: 'GreatVibes';
 }
 .header{
     display: flex;
