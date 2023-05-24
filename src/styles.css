@@ -21,7 +21,7 @@ body{
     color: white;
     padding: 15px;
     font-size: 3rem;
-    background-color: black;
+    background-color: rgb(0, 0, 0, .9);
     text-align: center;
     font-family: 'GreatVibes';
 }
@@ -29,8 +29,8 @@ body{
     display: flex;
     justify-content: space-around;
     font-size: 2rem;
-    font-weight: bold;
-    background-color: rgb(204, 204, 204);
+    background-color:  rgb(0, 0, 0, .9);
+    color: white;
 }
 .header > div{
     padding: 10px;
@@ -53,4 +53,24 @@ body{
     flex-direction: column;
     justify-content: center;
     font-weight: 400;
+}
+#home{
+    text-align: center;
+}
+.heading{
+    margin: 0;
+    font-family: 'GreatVibes';
+    font-size: 4rem;
+    font-weight: 300;
+}
+.welcome-message{
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+}
+.hours{
+    font-size: 1.5rem;
+    padding-top: 100px;
+    font-weight: bolder;
 }

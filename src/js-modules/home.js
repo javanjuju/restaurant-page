@@ -10,9 +10,9 @@ heading.textContent = 'Welcome To Sanji\'s Kitchen';
 
 const homePage = (() => {
 	homeTab.setAttribute('data-tab-target', '#home');
-	hours.classList.add('home', 'active');
-	welcomeMessage.classList.add('home', 'active');
-	heading.classList.add('home', 'active');
+	hours.classList.add('home', 'active', 'hours');
+	welcomeMessage.classList.add('home', 'active', 'welcome-message');
+	heading.classList.add('home', 'active', 'heading');
 
 	return {
 		homeTab,

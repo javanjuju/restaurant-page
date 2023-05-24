@@ -4,7 +4,7 @@ const area = document.createElement('div');
 const email = document.createElement('div');
 
 contactTab.textContent = 'Contacts';
-email.textContent = 'baritekitchen@gmail.com';
+email.textContent = 'sanjiskitchen@gmail.com';
 number.textContent = 'Number: XXXXXXXXX';
 area.textContent = 'Location: XXXXXXX';
 
